@@ -9,7 +9,7 @@ import{
 function appnew():JSX.Element{
     const mode = useColorScheme() === 'dark'
     return(
-        <View style={styles.boxx}>
+        <View style={mode?styles.boxx:styles.boxxw}>
 <Text style={mode?styles.whitetxt:styles.darktxt}>Ranbeer Singh</Text>
 </View>
 
@@ -22,14 +22,25 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#141414'
         
+        
     },
 
     whitetxt: {
-        color : '#ffffff'
+        color : '#ffffff',
+        
     },
 
     darktxt: {
-        color : '#000000'
+        color : '#000000',
+        backgroundColor: '#ffffff'
+    },
+    boxxw: {
+        flex : 1,
+        alignItems :'center',
+        justifyContent: 'center',
+        backgroundColor: '#ffffff'
+        
+        
     }
 }
 )
