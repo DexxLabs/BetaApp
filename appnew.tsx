@@ -10,7 +10,8 @@ function appnew():JSX.Element{
     const mode = useColorScheme() === 'dark'
     return(
         <View style={mode?styles.boxx:styles.boxxw}>
-<Text style={mode?styles.whitetxt:styles.darktxt}>Ranbeer Singh</Text>
+<Text style={mode?styles.whitetxt:styles.darktxt}>Ranbeer</Text>
+<Text style={mode?styles.whitetxt:styles.darktxt}>(Try switching to dark/light mode)</Text>
 </View>
 
     ) 
